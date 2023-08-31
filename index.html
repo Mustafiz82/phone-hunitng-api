@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phone hunting api</title>
     <link rel="shortcut icon" href="images/congo.png" type="image/x-icon">
- 
+
     <!-- tailwind and daisy ui link -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
@@ -111,9 +111,9 @@
                         <div class="flex-1  text-right flex justify-between">
                             <div></div>
                             <div class="w-56">
-                                    <img src="https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5.jpg" class="
+                                <img src="https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5.jpg" class="
                                     rounded-lg shadow-2xl w-full h-full" />
-                                </div>
+                            </div>
                         </div>
                         <div class="flex-1">
                             <h1 class="text-5xl font-bold">Galaxi S22 5G</h1>
@@ -132,7 +132,8 @@
                         <div class="flex-1  text-right flex justify-between">
                             <div></div>
                             <div class="w-56">
-                                <img src="https://fdn2.gsmarena.com/vv/bigpic/huawei-gt2-porshe1.jpg" class="w-full h-full"  />
+                                <img src="https://fdn2.gsmarena.com/vv/bigpic/huawei-gt2-porshe1.jpg"
+                                    class="w-full h-full" />
                             </div>
                         </div>
                         <div class="flex-1">
@@ -153,7 +154,7 @@
 
     </header>
 
- 
+
 
 
 
@@ -167,7 +168,7 @@
             <h1 class="text-4xl my-4">Search your phone</h1>
             <div class="w-auto md:w-[700px] border-2 mx-auto flex items-center ">
                 <input id="search-input" type="text" class=" flex-1 p-3 outline-none " placeholder="Search your phone">
-                <button onclick="searchPhone()" class="btn btn-primary ">search</button>
+                <button onclick="searchPhone(true)" class="btn btn-primary ">search</button>
             </div>
             <div>
                 <button class="btn btn-primary mt-4">Short by Date</button>
@@ -180,42 +181,48 @@
         <section>
             <!-- phone container -->
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="card  bg-base-100 border-[1px] p-6">
-                    <figure class=" p-10 bg-sky-100 ">
-                        <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="text-2xl font-bold card-title my-5">Iphone 13 Pro Max</h2>
-                        <p class="text-lg">There are many variations of passages of available, but the majority have
-                            suffered</p>
-                        <p class="text-2xl font-bold">$<SPan>999</SPan></p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card  bg-base-100 border-[1px] p-6">
-                    <figure class=" p-10 bg-sky-100 ">
-                        <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg" alt="Shoes"
-                            class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="text-2xl font-bold card-title my-5">Iphone 13 Pro Max</h2>
-                        <p class="text-lg">There are many variations of passages of available, but the majority have
-                            suffered</p>
-                        <p class="text-2xl font-bold">$<SPan>999</SPan></p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+
+
+            <!-- model -->
+
+            <!-- You can open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="showDetails.showModal()">open modal</button> -->
+            <dialog id="showDetails" class="modal">
+                <form  method="dialog" class="modal-box">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    <figure class=" p-10 bg-sky-100  flex justify-center items-center">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-start ">
+                        <h2 class="text-2xl font-bold card-title my-1">iphone 13 pro max</h2>
+                        <p class="text-lg">It is a long established fact that a reader will be distracted by the
+                            readable content of a page when looking at its layout.</p>
+
+                        <p><span class="font-bold">Brand :</span></p>
+                        <p><span class="font-bold">release Date :</span></p>
+                        <p><span class="font-bold">storage :</span></p>
+                        <p><span class="font-bold">Display Size :</span></p>
+                        <p><span class="font-bold">Chipset :</span></p>
+                        <p><span class="font-bold">Memory :</span></p>
+                        <p><span class="font-bold">Slug :</span></p>
+                        <p><span class="font-bold">WLAN :</span></p>
+                        <p><span class="font-bold">Bluetooth :</span></p>
+                        <p><span class="font-bold">Sensors :</span></p>
+                        <p><span class="font-bold">GPS :</span></p>
+                        <p><span class="font-bold">NFC :</span></p>
+                        <p><span class="font-bold">Radio :</span></p>
+                        <p><span class="font-bold">USB :</span></p>
+
+                    </div>
+                </form>
+            </dialog>
 
             <!-- show all button -->
             <div class="flex justify-center my-10">
-                <button  id="show-all-btn" class="btn btn-primary"> show all</button>
+                <button id="show-all-btn" onclick="searchPhone()" class="hidden btn btn-primary"> show all</button>
             </div>
         </section>
     </main>
@@ -246,33 +253,33 @@
 
         <div class="footer flex pt-10  text-base-content justify-between">
             <div>
-              <span class="footer-title">Services</span> 
-              <a class="link link-hover">Branding</a> 
-              <a class="link link-hover">Design</a> 
-              <a class="link link-hover">Marketing</a> 
-              <a class="link link-hover">Advertisement</a>
-            </div> 
-            <div>
-              <span class="footer-title">Company</span> 
-              <a class="link link-hover">About us</a> 
-              <a class="link link-hover">Contact</a> 
-              <a class="link link-hover">Jobs</a> 
-              <a class="link link-hover">Press kit</a>
-            </div> 
-            <div>
-              <span class="footer-title">Legal</span> 
-              <a class="link link-hover">Terms of use</a> 
-              <a class="link link-hover">Privacy policy</a> 
-              <a class="link link-hover">Cookie policy</a>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
             </div>
             <div>
-              <span class="footer-title">Legal</span> 
-              <a class="link link-hover">Terms of use</a> 
-              <a class="link link-hover">Privacy policy</a> 
-              <a class="link link-hover">Cookie policy</a>
+                <span class="footer-title">Company</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
             </div>
-          </div> 
-         
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+        </div>
+
     </footer>
 
 
@@ -283,7 +290,7 @@
 
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
