@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phone hunting api</title>
+    <link rel="shortcut icon" href="images/congo.png" type="image/x-icon">
+
+    <!-- tailwind and daisy ui link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#111',
+                        pink: '#E527B2'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- google fonts link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- font-awosome cdn -->
+
+    <script src="https://kit.fontawesome.com/5cbc10dd8b.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+    <header class="max-w-screen-xl mx-auto">
+
+
+        <nav>
+            <ul class="flex justify-between items-center p-7">
+                <li class="text-2xl font-bold">Hot gadgets</li>
+                <li class=""><button class="btn btn-primary">sign up</button></li>
+            </ul>
+        </nav>
+
+        <!-- bannar  section -->
+
+        <div>
+            <div class="carousel w-full text-center md:text-left">
+                <div id="slide1" class="carousel-item relative w-full">
+
+                    <div class="hero max-h-[700px] h-screen bg-sky-100">
+                        <div class="hero-content flex-col md:flex-row-reverse justify-around ">
+                            <div class="flex-1  text-right flex justify-end">
+                                <div></div>
+                                <div class="w-56">
+                                    <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg" class="
+                                    rounded-lg shadow-2xl w-full h-full" />
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
+                                <p class="py-6">There are many variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered alteration in some form, by injected humou. </p>
+                                <button class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero max-h-[700px] h-screen bg-base-200">
+                        <div class="hero-content flex-col md:flex-row-reverse justify-between ">
+                            <div class="flex-1  text-right flex justify-between">
+                                <div></div>
+                                <div class="w-56">
+                                    <img src="https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5.jpg" class="
+                                    rounded-lg shadow-2xl w-full h-full" />
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h1 class="text-5xl font-bold">Oppo Find X5</h1>
+                                <p class="py-6">There are many variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered alteration in some form, by injected humou. </p>
+                                <button class="btn btn-primary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero-content flex-col md:flex-row-reverse justify-between ">
+                        <div class="flex-1  text-right flex justify-between">
+                            <div></div>
+                            <div class="w-56">
+                                    <img src="https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5.jpg" class="
+                                    rounded-lg shadow-2xl w-full h-full" />
+                                </div>
+                        </div>
+                        <div class="flex-1">
+                            <h1 class="text-5xl font-bold">Galaxi S22 5G</h1>
+                            <p class="py-6">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, by injected humou. </p>
+                            <button class="btn btn-primary">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero-content flex-col md:flex-row-reverse justify-between ">
+                        <div class="flex-1  text-right flex justify-between">
+                            <div></div>
+                            <div class="w-56">
+                                <img src="https://fdn2.gsmarena.com/vv/bigpic/huawei-gt2-porshe1.jpg" class="w-full h-full"  />
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h1 class="text-5xl font-bold">Watch GT 2 Porsche Design"</h1>
+                            <p class="py-6">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, by injected humou. </p>
+                            <button class="btn btn-primary">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+ 
+
+
+
+
+
+
+    <main class="max-w-screen-xl mx-auto">
+
+        <!-- search -->
+        <section class="text-center my-8 ">
+            <h1 class="text-4xl my-4">Search your phone</h1>
+            <div class="w-auto md:w-[700px] border-2 mx-auto flex items-center ">
+                <input id="search-input" type="text" class=" flex-1 p-3 outline-none " placeholder="Search your phone">
+                <button onclick="searchPhone()" class="btn btn-primary ">search</button>
+            </div>
+            <div>
+                <button class="btn btn-primary mt-4">Short by Date</button>
+            </div>
+            <input type="text">
+        </section>
+
+
+        <!-- Phones card container section -->
+        <section>
+            <!-- phone container -->
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="card  bg-base-100 border-[1px] p-6">
+                    <figure class=" p-10 bg-sky-100 ">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-2xl font-bold card-title my-5">Iphone 13 Pro Max</h2>
+                        <p class="text-lg">There are many variations of passages of available, but the majority have
+                            suffered</p>
+                        <p class="text-2xl font-bold">$<SPan>999</SPan></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card  bg-base-100 border-[1px] p-6">
+                    <figure class=" p-10 bg-sky-100 ">
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="text-2xl font-bold card-title my-5">Iphone 13 Pro Max</h2>
+                        <p class="text-lg">There are many variations of passages of available, but the majority have
+                            suffered</p>
+                        <p class="text-2xl font-bold">$<SPan>999</SPan></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- show all button -->
+            <div class="flex justify-center my-10">
+                <button  id="show-all-btn" class="btn btn-primary"> show all</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="  bg-sky-100 max-w-screen-xl mx-auto p-5 md:p-20 lg:p-28 ">
+
+        <div class="flex flex-col md:flex-row justify-between  items-center">
+            <div class="items-center grid-flow-col">
+
+                <p class="text-4xl font-bold my-3">Hot Gadgets</p>
+                <p>you can definitely work </p>
+            </div>
+            <div class="flex  grid-flow-col  gap-4 md:place-self-center md:justify-self-end items-center">
+                <a>
+                    <i class="fa-brands fa-facebook text-2xl"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-twitter text-2xl"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                </a>
+
+                <button class="btn btn-primary"> join premium</button>
+            </div>
+        </div>
+
+
+        <div class="footer flex pt-10  text-base-content justify-between">
+            <div>
+              <span class="footer-title">Services</span> 
+              <a class="link link-hover">Branding</a> 
+              <a class="link link-hover">Design</a> 
+              <a class="link link-hover">Marketing</a> 
+              <a class="link link-hover">Advertisement</a>
+            </div> 
+            <div>
+              <span class="footer-title">Company</span> 
+              <a class="link link-hover">About us</a> 
+              <a class="link link-hover">Contact</a> 
+              <a class="link link-hover">Jobs</a> 
+              <a class="link link-hover">Press kit</a>
+            </div> 
+            <div>
+              <span class="footer-title">Legal</span> 
+              <a class="link link-hover">Terms of use</a> 
+              <a class="link link-hover">Privacy policy</a> 
+              <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+              <span class="footer-title">Legal</span> 
+              <a class="link link-hover">Terms of use</a> 
+              <a class="link link-hover">Privacy policy</a> 
+              <a class="link link-hover">Cookie policy</a>
+            </div>
+          </div> 
+         
+    </footer>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
